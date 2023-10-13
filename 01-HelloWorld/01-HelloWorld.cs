@@ -31,7 +31,39 @@ namespace ProgrammingExercisesIST
         static void Main(string[] args)
         {
             // Your code goes below here
-
+            Console.WriteLine("Hello World");
+            Console.ReadLine();
+            Console.WriteLine("DOMAIN eXPANSION! INFINITE VOIDDDDDD OOOOWOH OOOWOOHO OOOWOHO");
+            Console.BackgroundColor = ConsoleColor.Red;
+            Console.ReadLine();
+            Console.BackgroundColor = ConsoleColor.Magenta;
+            Console.ReadLine();
+            Console.BackgroundColor = ConsoleColor.Cyan;
+            Console.ReadLine();
+            Console.BackgroundColor = ConsoleColor.Red;
+            Console.ReadLine();
+            Console.BackgroundColor = ConsoleColor.Magenta;
+            Console.ReadLine();
+            Console.BackgroundColor = ConsoleColor.Cyan;
+            Console.ReadLine();
+            Console.BackgroundColor = ConsoleColor.Red;
+            Console.ReadLine();
+            Console.BackgroundColor = ConsoleColor.Magenta;
+            Console.ReadLine();
+            Console.BackgroundColor = ConsoleColor.Cyan;
+            Console.ReadLine();
+            Console.Beep(3000, 1000);
+            Console.Beep(3000, 1000);
+            Console.Beep(3000, 1000);
+            Console.Beep(3000, 1000);
+            Console.Beep(3000, 1000);
+            Console.Beep(3000, 1000);
+            Console.Beep(3000, 1000);
+            Console.Beep(3000, 1000);
+            Console.Beep(3000, 1000);
+            Console.Beep(3000, 1000);
+            Console.Beep(3000, 1000);
+            Console.Beep(3000, 1000);
         }
     }
 }
