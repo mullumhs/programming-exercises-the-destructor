@@ -44,7 +44,11 @@ namespace ProgrammingExercisesIST
         static void Main(string[] args)
         {
             // Your code goes below here
-
+            int MEOW = 200;
+            double woof = 69.69;
+            bool bark = false;
+            Console.WriteLine($"The lonely sigma is {MEOW} years old and has a PP size of {woof} millimetres, his Has.Girlfriend status is {bark}");
+            Console.ReadLine();
         }
     }
 }
