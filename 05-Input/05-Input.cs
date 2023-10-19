@@ -43,10 +43,10 @@ namespace ProgrammingExercisesIST
             Console.WriteLine($"HELLO {name}");
             Console.ReadLine();
             Console.WriteLine($"Are YOU FROM OHIO");
-            string ohio = Console.ReadLine();
-            if ohio = "no";
+            string ohio = Console.();
+            if (ohio) = "no";
                 Console.ReadLine("OKIE DOKIE!!") ;
-            if ohio == "yes";
+            if (ohio) = "yes";
                 Console.ReadLine($"Yuo Are a BAKA {name}-chan") ;
         }
     }
