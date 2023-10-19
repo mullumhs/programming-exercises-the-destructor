@@ -39,7 +39,15 @@ namespace ProgrammingExercisesIST
         static void Main(string[] args)
         {
             // Your code goes below here
-
+            string name = Console.ReadLine();
+            Console.WriteLine($"HELLO {name}");
+            Console.ReadLine();
+            Console.WriteLine($"Are YOU FROM OHIO");
+            string ohio = Console.ReadLine();
+            if ohio = "no";
+                Console.ReadLine("OKIE DOKIE!!") ;
+            if ohio == "yes";
+                Console.ReadLine($"Yuo Are a BAKA {name}-chan") ;
         }
     }
 }
