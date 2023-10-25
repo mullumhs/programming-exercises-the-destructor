@@ -53,7 +53,18 @@ namespace ProgrammingExercisesIST
             double x = Convert.ToDouble(Console.ReadLine());
 
             // Your code goes below here
-
+            Console.WriteLine("Please enter a number for Y:");
+            double y = Convert.ToDouble(Console.ReadLine());
+            //add
+            Console.WriteLine($"{x} plus {y} = {x+y} ");
+            //minus
+            Console.WriteLine($"{x} minus {y} = {x - y} ");
+            //divided
+            Console.WriteLine($"{x} divided {y} = {x / y} ");
+            //times
+            Console.WriteLine($"{x} times {y} = {x * y} ");
+            //wow!
+            Console.ReadLine();
         }
     }
 }
