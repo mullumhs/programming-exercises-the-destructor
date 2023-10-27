@@ -51,9 +51,23 @@ namespace ProgrammingExercisesIST
             // Variables and Input
             Console.Write("Please enter a mark out of 100: ");
             int mark = Convert.ToInt32(Console.ReadLine());
+            Console.Write("What is your name: ");
+            string name = Console.ReadLine();
 
             // Your code goes below here
-
+            if (mark == 100)
+            {
+                Console.WriteLine("JARLI DE SALIVER IS SO SUSSY!");
+            }
+            else if (mark == 99)
+            {
+                Console.WriteLine("JARLI IS A BAAAAAAAAAAAAAaaAAAAEAEAAKAAA");
+            }
+            else if (mark <= 98)
+            {
+                Console.WriteLine($"jarli is dissapointed, ur such a silly boy, {name}-sama");
+            }
+            Console.ReadLine();
         }
     }
 }

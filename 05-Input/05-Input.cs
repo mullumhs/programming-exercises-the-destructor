@@ -44,10 +44,14 @@ namespace ProgrammingExercisesIST
             Console.ReadLine();
             Console.WriteLine($"Are YOU FROM OHIO");
             string ohio = Console.ReadLine();
-            if (ohio) "no";
-                Console.WriteLine("OKIE DOKIE!!") ;
-            if (ohio) "yes";
+            if (ohio == no) ;
+        }
+        Console.WriteLine("OKIE DOKIE!!");
+        {
+        else(ohio == yes);
+        }
                 Console.WriteLine($"Yuo Are a BAKA {name}-chan") ;
+        {
         }
     }
 }
