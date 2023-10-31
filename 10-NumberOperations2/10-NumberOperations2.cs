@@ -56,6 +56,29 @@ namespace ProgrammingExercisesIST
 
 
             // Wait for any key before exiting
+            Console.WriteLine("Please enter a number for x");
+            double x = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Please enter a number for y");
+            double y = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("What operation would you like");
+            Console.WriteLine("1. Add");
+            Console.WriteLine("2. Sub");
+
+            string operation = Console.ReadLine();
+
+            if (operation == "1")
+            {
+                Console.WriteLine($"{x} plus {y} = {x + y}");
+            }
+            else if (operation == "2")
+            {
+                Console.WriteLine($"{x} minus {y} = {x - y}");
+            }
+
+
+
             Console.WriteLine();
             Console.WriteLine("Press any key to exit...");
             Console.ReadKey();

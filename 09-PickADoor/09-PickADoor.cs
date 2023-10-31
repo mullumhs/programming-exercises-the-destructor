@@ -61,6 +61,30 @@ namespace ProgrammingExercisesIST
                     if (door == 1)
                         if (door2 == 2)
                             Console.WriteLine("MEOW MEOW MEOW MEOW MEOW");
+                    if (door == 1)
+                        if (door2 == 3)
+                            Console.WriteLine("Linc's is a cutie patootie.");
+                    if (door == 2)
+                        if (door2 == 1)
+                        {
+
+                            Console.WriteLine("Domain Expansion: Infinite Void");
+                            Console.BackgroundColor = ConsoleColor.DarkRed;
+                            Console.WriteLine("");
+                            Console.Beep(37, 100);
+                            Console.Clear();
+                            Console.BackgroundColor = ConsoleColor.DarkCyan;
+                            Console.WriteLine("");
+                            Console.Beep(37, 100);
+                            Console.Clear();
+                            Console.BackgroundColor = ConsoleColor.DarkMagenta;
+                            Console.WriteLine("");
+                            Console.Beep(37, 100);
+                            Console.Clear();
+
+                            
+                        }
+
 
                 }
                 else
