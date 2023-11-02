@@ -51,57 +51,88 @@ namespace ProgrammingExercisesIST
         {
             // Your code goes below here
 
-            Console.WriteLine("Choice an Option:");
-            Console.WriteLine("1. Area of Circle");
-            Console.WriteLine("1. Area of Rectangle");
-            Console.WriteLine("1. Area of Triangle");
-            Console.WriteLine();
+            Menu();
+
             string choice = Console.ReadLine();
             Console.WriteLine();
 
             if (choice == "1")
             {
-                Console.Write("Enter Radius: ");
-                double radius = Convert.ToDouble(Console.ReadLine());
-                Console.WriteLine();
-                Console.WriteLine();
-                Console.WriteLine();
-
-                double circle = Math.PI * Math.Pow(radius, 2);
-                Console.WriteLine($"Circle with a radius of {radius} area = {circle}");
+                CalcCircle();
             }
             else if (choice == "2")
             {
-                Console.Write("Enter Width: ");
-                double width = Convert.ToDouble(Console.ReadLine());
-                Console.WriteLine();
-                Console.Write("Enter Height: ");
-                double height = Convert.ToDouble(Console.ReadLine());
-                Console.WriteLine();
-                Console.WriteLine();
-                Console.WriteLine();
-
-                double rectangle = width * height;
-                Console.WriteLine($"Rectangle with a width of {width} and height of {height} area = {rectangle}");
+                CalcRectangle();
             }
             else if (choice == "3")
             {
-                Console.Write("Enter Width: ");
-                double width = Convert.ToDouble(Console.ReadLine());
-                Console.WriteLine();
-                Console.Write("Enter Height: ");
-                double height = Convert.ToDouble(Console.ReadLine());
-                Console.WriteLine();
-                Console.WriteLine();
-                Console.WriteLine();
-
-                double triangle = (width * height) / 2;
-                Console.WriteLine($"Triangle with a width of {width} and height of {height} area = {triangle}");
+                CalcTriangle();
             }
             else
-                Console.WriteLine("Bruh moment");
+               Fail();
+        }
+        static void Menu()
+        {
+            Console.WriteLine("Choice an Option:");
+            Console.WriteLine("1. Area of Circle");
+            Console.WriteLine("2. Area of Rectangle");
+            Console.WriteLine("3. Area of Triangle");
+            Console.WriteLine();
+
+        }
+
+        static void CalcCircle()
+        {
+            Console.Write("Enter Radius: ");
+            double radius = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine();
+
+            double circle = Math.PI * Math.Pow(radius, 2);
+            Console.WriteLine($"Circle with a radius of {radius} area = {circle}");
             Console.ReadLine();
         }
+
+        static void CalcRectangle()
+        {
+            Console.Write("Enter Width: ");
+            double width = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine();
+            Console.Write("Enter Height: ");
+            double height = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine();
+
+            double rectangle = width * height;
+            Console.WriteLine($"Rectangle with a width of {width} and height of {height} area = {rectangle}");
+            Console.ReadLine();
+        }
+
+        static void CalcTriangle()
+        {
+            Console.Write("Enter Width: ");
+            double width = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine();
+            Console.Write("Enter Height: ");
+            double height = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine();
+
+            double triangle = (width * height) / 2;
+            Console.WriteLine($"Triangle with a width of {width} and height of {height} area = {triangle}");
+            Console.ReadLine();
+        }
+
+        static void Fail()
+        {
+            Console.WriteLine("Bruh moment");
+            Console.ReadLine();
+        }
+
+        
     }
 }
 
