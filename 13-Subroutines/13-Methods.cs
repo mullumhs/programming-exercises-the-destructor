@@ -34,9 +34,19 @@ namespace ProgrammingExercisesIST
         static void Main(string[] args)
         {
             // Call the methods here
-            
+            Hello();
+            Exit();
         }
-
+        static void Hello()
+        {
+            Console.WriteLine("Hello");
+        }
+        static void Exit()
+        {
+            Console.WriteLine("Exit...");
+            Console.ReadKey();
+          
+        }
         // Write your methods here
 
     }
