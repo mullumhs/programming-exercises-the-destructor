@@ -47,11 +47,33 @@ namespace ProgrammingExercisesIST
         static void Main(string[] args)
         {
             // Call the methods here, passing in the required arguments
+            Console.WriteLine("Number 1 please");
+            double num1 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Number 2 please");
+            double num2 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("What is your name");
+            string name = Console.ReadLine();
+           
 
+            SayHello(name);
+            MultiplyNumbers(num1, num2);
+            Exit();
         }
 
         // Write your methods including parameters here
-
+        static void SayHello(string name)
+        {
+            Console.WriteLine($"Hello {name}");
+        }
+        static void Exit()
+        {
+            Console.ReadKey();
+        }
+        static void MultiplyNumbers(double Num1, double Num2)
+        {
+            double answer = Num1 * Num2;
+            Console.WriteLine($"The answer of {Num1} multiplied by {Num2} equals {answer}");
+        }
     }
 }
 
