@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Runtime.Remoting.Services;
+using System.Xml.Serialization;
 
 /*
 ===============================================================================
@@ -72,7 +74,73 @@ namespace ProgrammingExercisesIST
         static void Main(string[] args)
         {
             // Write your code here
+            question();
+            string Choice = Console.ReadLine();
+            if (Choice == "1")
+            {
+                Choice1();
+            }
+            else if (Choice == "2")
+            {
+                Choice2();
+            }
+            else
+            {
+                Console.WriteLine("Nice one bud");
+            }
+            Exit();
+        }
 
+        // functions
+        static void question()
+        {
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(" What would you like to do?");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine("1. Celsius to Fahrenheit");
+            Console.WriteLine("2. Fahrenheit to Celsius");
+            Console.WriteLine();
+        }
+        static double CtoF(double c)
+        {
+            return (c * 9 / 5) + 32;
+        }
+        static double FtoC(double f)
+        {
+            return (f - 32) * 5 / 9;
+        }
+        static void Exit()
+        {
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("Press any key to exit");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.ReadKey();
+        }
+        static void Choice1()
+        {
+            Console.WriteLine("Enter temperature in Celsius");
+            double c = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine($"{CtoF(c)} degrees Fahrenheit");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine();
+        }
+        static void Choice2()
+        {
+            Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine("Enter temperature in Fahrenheit");
+            Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.White;
+            double f = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine($"{FtoC(f)} degrees Celsius");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine();
         }
     }
 }

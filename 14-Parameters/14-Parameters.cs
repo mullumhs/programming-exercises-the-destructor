@@ -63,6 +63,8 @@ namespace ProgrammingExercisesIST
         // Write your methods including parameters here
         static void SayHello(string name)
         {
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine();
             Console.WriteLine($"Hello {name}");
         }
         static void Exit()
@@ -72,6 +74,8 @@ namespace ProgrammingExercisesIST
         static void MultiplyNumbers(double Num1, double Num2)
         {
             double answer = Num1 * Num2;
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine();
             Console.WriteLine($"The answer of {Num1} multiplied by {Num2} equals {answer}");
         }
     }
