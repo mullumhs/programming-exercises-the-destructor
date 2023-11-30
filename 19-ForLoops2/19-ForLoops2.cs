@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics.Eventing.Reader;
 
 /*
 ===============================================================================
@@ -59,11 +60,26 @@ namespace ProgrammingExercisesIST
         {
             WaitBetween("Loop to find the number 42:");
 
+            for (int i = 20; i < 50; i++)
+            {
+                if (i == 42)
+                    Console.WriteLine("Found It");
 
+                else 
+                    Console.WriteLine(i);
+
+            }
 
             WaitBetween("Loop to find numbers divisible by 2:");
 
+            for(int i = 0; i < 40; i++)
+            {
+                if (i % 2 == 0)
+                    Console.WriteLine("found it");
 
+                else 
+                    Console.WriteLine(i);
+            }
 
             // Wait at end
             WaitAtEnd();

@@ -35,7 +35,7 @@ namespace ProgrammingExercisesIST
             WaitBetween("From 5 to 15:");
 
             // 1. Fix the following FOR loop so that it prints from 5 to 15
-            for (int i = 9999; i < 9999; i++)
+            for (int i = 5; i < 15; i++)
             {
                 Console.WriteLine(i);
             }
@@ -43,7 +43,7 @@ namespace ProgrammingExercisesIST
             WaitBetween("From 20 down to 1:");
 
             // 2. Fix the following loop so that it counts DOWN
-            for (int x = 20; x > 0; x++)
+            for (int x = 20; x > 0; x--)
             {
                 Console.WriteLine(x);
             }
@@ -51,7 +51,7 @@ namespace ProgrammingExercisesIST
             WaitBetween("From 90 to 100 by two's:");
 
             // 3. Make the following loop increment by 2 each time
-            for (int count = 90; count <=100; count++)
+            for (int count = 90; count <=100; count+=2)
             {
                 Console.WriteLine(count);
             }
@@ -60,14 +60,20 @@ namespace ProgrammingExercisesIST
 
             // 4. Make your own FOR loop (press TAB twice quickly) 
             // that counts from 60 down to 30 in steps of 3
-
+            for(int count2 = 60; count2 >= 30; count2 -=3)
+            { 
+                Console.WriteLine(count2); 
+            }
 
 
             WaitBetween("2 to the power of 0 through to 9");
 
             // 5. Make your own FOR loop (press TAB twice quickly).
             // Use it to print out the values of '2 to the power of 0 through to 9'
-
+            for (int e = 0; e <= 9; e++)
+            {
+                Console.WriteLine(Math.Pow(2, e));
+            }
 
 
             // Wait at end
